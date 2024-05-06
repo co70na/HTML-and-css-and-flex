@@ -1,0 +1,382 @@
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* PAGE */
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.con {
+  width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  /* margin-bottom: 60px; */
+  /* height: 80px; */
+}
+
+/* article {
+   margin-bottom: 60px; 
+} */
+
+nav {
+  font-size: 18px;
+  /* text-align: center; */
+}
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 40px;
+}
+/*  SOMETHiNG */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/*  
+footer p {
+  font-size: 16px;
+}
+
+
+article header p {
+  font-style: italic;
+}
+*/
+#girl {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#dude {
+  font-size: 16px;
+}
+
+.yoko {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fun {
+  list-style: none;
+  margin-left: 0;
+}
+
+/*
+body {
+  background-color: #444;
+ }
+ */
+
+/* .one-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+
+/* li:nth-child(even) {
+  color: red;
+} */
+
+/*forget about this line of code */
+article p:first-child {
+  color: red;
+}
+
+/* styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline red;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* LVHA */
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px; 
+
+   display: block; */
+
+  margin-right: 30px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2 {
+  /* background-color: #444; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+/* resolving conflicts */
+/* 
+#dude {
+  color: red;
+}
+
+.right {
+  color: yellow;
+}
+
+.text {
+  color: blue;
+}
+
+footer p {
+  color: green ;
+} */
+/* 
+nav a :link {
+
+  font-size: 18px;
+} */
+
+/* Floats */
+/* 
+.co {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.co-girl {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+ */
+
+/* FLEXBOX  */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.co-girl {
+  margin-bottom: 0%;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0%;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+/* FLEXBOX */
+
+/* 
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+} 
+ 
+article {
+  flex: 1;
+  margin-bottom: 0%;
+} 
+
+ aside {
+  flex: 0 0 300px;
+}  */
+/* CSSGRID LAYOUT */
+.con {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+footer {
+  grid-column: 1 / -1;
+}
